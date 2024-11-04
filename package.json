@@ -1,0 +1,21 @@
+{
+  "name": "sqs-consumer-poc",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "sh setup.sh",
+    "consume:sqs.fifo": "node main.js sqs-with-message-groups",
+    "consume:sqs_from_sns": "node main.js sns-to-sqs",
+    "produce:sqs": "sh send-messages-sqs.sh",
+    "produce:sns": "sh send-messages-sns.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.669.0",
+    "sqs-consumer": "^11.1.0"
+  }
+}
