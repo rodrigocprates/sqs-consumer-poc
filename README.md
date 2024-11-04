@@ -1,3 +1,5 @@
+## Description
+POC to evaluate SQS message groups and SNS+SQS for fan out architecture
 
 ## Run
 - Install: `pnpm install`
